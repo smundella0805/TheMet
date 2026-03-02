@@ -111,8 +111,8 @@ struct ContentView: View {
         if object.isPublicDomain {
           path.append(object)
         } else {
-          if let url = URL(string: object.objectURL) {
-            path.append(url)
+          if let objectURL = URL(string: object.objectURL) {
+            path.append(objectURL)
           }
         }
       }

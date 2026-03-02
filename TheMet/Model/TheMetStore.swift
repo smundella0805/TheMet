@@ -35,9 +35,7 @@ import WidgetKit
 
 extension FileManager {
   static func sharedContainerURL() -> URL {
-    return FileManager.default.containerURL(
-      forSecurityApplicationGroupIdentifier:
-        "group.your.prefix.TheMet.objects")!
+    return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.yourcompany.TheMet.objects")!
   }
 }
 

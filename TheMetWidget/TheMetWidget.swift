@@ -36,9 +36,8 @@ import SwiftUI
 struct Provider: TimelineProvider {
   func readObjects() -> [Object] {
     var objects: [Object] = []
-    let archiveURL =
-      FileManager.sharedContainerURL()
-        .appendingPathComponent("objects.json")
+    let archiveURL = FileManager.sharedContainerURL()
+      .appendingPathComponent("objects.json")
     print(">>> \(archiveURL)")
     if let codeData = try? Data(contentsOf: archiveURL) {
       do {
